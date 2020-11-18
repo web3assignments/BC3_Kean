@@ -29,10 +29,10 @@ contract Game {
         
         // WARN: This unbounded for loop is an anti-pattern
         
-        for (uint i=0; i<pulls.length; i++) {
+        for (uint i = 0; i<pulls.length; i++) {
            if( pulls[i]== 0){
                Fivestar++;
-           } else if (pulls[i]>0 && 0<10){
+           } else if (pulls[i]>0 && pulls[i]<10){
                Fourstar++;
            }else {
                Threestar++;
