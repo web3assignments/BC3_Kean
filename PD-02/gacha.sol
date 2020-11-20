@@ -14,14 +14,14 @@ contract Game {
         _pull = pull;
     }
 
-    function randompull() private returns (uint) {
-    uint randomnumber = uint(keccak256(abi.encodePacked(block.timestamp , msg.sender))) % 200;
+    function randompull(uint i) private returns (uint) {
+    uint randomnumber = uint(keccak256(abi.encodePacked(block.timestamp , msg.sender, i))) % 200;
     return randomnumber;
     }
 
     function PullCharacter() public {
         for(uint i =0; i< _pull; i++){
-        pulls.push(randompull());
+        pulls.push(randompull(i));
         }
     }
     
@@ -30,11 +30,11 @@ contract Game {
         // WARN: This unbounded for loop is an anti-pattern
         
         for (uint i = 0; i<pulls.length; i++) {
-           if( pulls[i]== 0){
+           if( pulls[i] == 0){
                Fivestar++;
-           } else if (pulls[i]>0 && pulls[i]<10){
+           } else if (pulls[i] > 0 && pulls[i] < 10){
                Fourstar++;
-           }else {
+           } else {
                Threestar++;
            }
         }
