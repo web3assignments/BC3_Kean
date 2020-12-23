@@ -88,13 +88,13 @@ export class HomeComponent implements OnInit {
         "stateMutability": "view",
         "type": "function"
       }
-    ], this.contract);    
-    console.log(this.gacha);
+    ], this.contract);  
+      
 }
 
   Start(amount:number) {
     this.gacha.methods.Start(amount).send({from:this.account}).then((res: any) => {
-      console.log(res);
+      console.log(res.events.WantGachaPull);
       if (amount == 1){this.result = [res.events.WantGachaPull];}
       if (amount == 10){this.result = res.events.WantGachaPull;}
       console.log(this.result)
