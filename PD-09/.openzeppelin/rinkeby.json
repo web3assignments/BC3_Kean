@@ -1,0 +1,409 @@
+{
+  "manifestVersion": "3.1",
+  "impls": {
+    "482710e383d08f9da9117bf9f370f96e040fa28555b6d4b0dbc38d6c3a7d2a8a": {
+      "address": "0xE2E994E1d7eEe2dd57Fc5d460E13Ea5B1AeB7752",
+      "txHash": "0xee874518c742d40482887da4630574202a4fb3629b7f4c63a8c1603ed498281c",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\Initializable.sol:23"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\Initializable.sol:28"
+          },
+          {
+            "contract": "Gacha",
+            "label": "_pull",
+            "type": "t_uint256",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\Gacha.sol:6"
+          },
+          {
+            "contract": "Gacha",
+            "label": "Fivestar",
+            "type": "t_array(t_string_storage)dyn_storage",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\Gacha.sol:10"
+          },
+          {
+            "contract": "Gacha",
+            "label": "Fourstar",
+            "type": "t_array(t_string_storage)dyn_storage",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\Gacha.sol:11"
+          },
+          {
+            "contract": "Gacha",
+            "label": "Threestar",
+            "type": "t_array(t_string_storage)dyn_storage",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\Gacha.sol:12"
+          },
+          {
+            "contract": "Gacha",
+            "label": "PullResult",
+            "type": "t_mapping(t_uint256,t_struct(Unit)30_storage)",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\Gacha.sol:13"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_array(t_string_storage)dyn_storage": {
+            "label": "string[]"
+          },
+          "t_mapping(t_uint256,t_struct(Unit)30_storage)": {
+            "label": "mapping(uint256 => struct Gacha.Unit)"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    },
+    "7a3672740c5f48b7456009cc83fbbe35d42012aae6075b798a56f7063e2071a6": {
+      "address": "0xCbC350281d770a19Cf6D60E765e7535a7341c810",
+      "txHash": "0xdf935098c416b2ba5781d82f6f6bdde97ef9bda23c2d4c2641e53bd41333c37d",
+      "layout": {
+        "storage": [
+          {
+            "contract": "usingProvable",
+            "label": "provable",
+            "type": "t_contract(ProvableI)774",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\ProvableAPI_0.6.sol:259"
+          },
+          {
+            "contract": "usingProvable",
+            "label": "OAR",
+            "type": "t_contract(OracleAddrResolverI)780",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\ProvableAPI_0.6.sol:260"
+          },
+          {
+            "contract": "usingProvable",
+            "label": "provable_network_name",
+            "type": "t_string_storage",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\ProvableAPI_0.6.sol:273"
+          },
+          {
+            "contract": "usingProvable",
+            "label": "provable_randomDS_args",
+            "type": "t_mapping(t_bytes32,t_bytes32)",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\ProvableAPI_0.6.sol:280"
+          },
+          {
+            "contract": "usingProvable",
+            "label": "provable_randomDS_sessionKeysHashVerified",
+            "type": "t_mapping(t_bytes32,t_bool)",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\ProvableAPI_0.6.sol:281"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\Initializable.sol:23"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\Initializable.sol:28"
+          },
+          {
+            "contract": "Gacha",
+            "label": "_pull",
+            "type": "t_uint256",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\Gacha.sol:7"
+          },
+          {
+            "contract": "Gacha",
+            "label": "Fivestar",
+            "type": "t_array(t_string_storage)dyn_storage",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\Gacha.sol:11"
+          },
+          {
+            "contract": "Gacha",
+            "label": "Fourstar",
+            "type": "t_array(t_string_storage)dyn_storage",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\Gacha.sol:12"
+          },
+          {
+            "contract": "Gacha",
+            "label": "Threestar",
+            "type": "t_array(t_string_storage)dyn_storage",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\Gacha.sol:13"
+          },
+          {
+            "contract": "Gacha",
+            "label": "PullResult",
+            "type": "t_mapping(t_uint256,t_struct(Unit)33_storage)",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\Gacha.sol:14"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_array(t_string_storage)dyn_storage": {
+            "label": "string[]"
+          },
+          "t_mapping(t_uint256,t_struct(Unit)33_storage)": {
+            "label": "mapping(uint256 => struct Gacha.Unit)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_contract(ProvableI)774": {
+            "label": "contract ProvableI"
+          },
+          "t_contract(OracleAddrResolverI)780": {
+            "label": "contract OracleAddrResolverI"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_mapping(t_bytes32,t_bytes32)": {
+            "label": "mapping(bytes32 => bytes32)"
+          },
+          "t_mapping(t_bytes32,t_bool)": {
+            "label": "mapping(bytes32 => bool)"
+          }
+        }
+      }
+    },
+    "8ac066a5d4cc72ed31f4e5c317dd2dbdce8311e365f642227faeceffadba81de": {
+      "address": "0xC4416E62aC191d09a526AED861B3C823d07A214D",
+      "txHash": "0x7476561989b0893b6b6edd353c566eda6656c464bb5a9383fb7549b1d33822c3",
+      "layout": {
+        "storage": [
+          {
+            "contract": "usingProvable",
+            "label": "provable",
+            "type": "t_contract(ProvableI)761",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\ProvableAPI_0.6.sol:259"
+          },
+          {
+            "contract": "usingProvable",
+            "label": "OAR",
+            "type": "t_contract(OracleAddrResolverI)767",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\ProvableAPI_0.6.sol:260"
+          },
+          {
+            "contract": "usingProvable",
+            "label": "provable_network_name",
+            "type": "t_string_storage",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\ProvableAPI_0.6.sol:273"
+          },
+          {
+            "contract": "usingProvable",
+            "label": "provable_randomDS_args",
+            "type": "t_mapping(t_bytes32,t_bytes32)",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\ProvableAPI_0.6.sol:280"
+          },
+          {
+            "contract": "usingProvable",
+            "label": "provable_randomDS_sessionKeysHashVerified",
+            "type": "t_mapping(t_bytes32,t_bool)",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\ProvableAPI_0.6.sol:281"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\Initializable.sol:23"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\Initializable.sol:28"
+          },
+          {
+            "contract": "Gacha",
+            "label": "_pull",
+            "type": "t_uint256",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\Gacha.sol:7"
+          },
+          {
+            "contract": "Gacha",
+            "label": "Fivestar",
+            "type": "t_array(t_string_storage)dyn_storage",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\Gacha.sol:11"
+          },
+          {
+            "contract": "Gacha",
+            "label": "Fourstar",
+            "type": "t_array(t_string_storage)dyn_storage",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\Gacha.sol:12"
+          },
+          {
+            "contract": "Gacha",
+            "label": "Threestar",
+            "type": "t_array(t_string_storage)dyn_storage",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\Gacha.sol:13"
+          },
+          {
+            "contract": "Gacha",
+            "label": "PullResult",
+            "type": "t_mapping(t_uint256,t_struct(Unit)33_storage)",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\Gacha.sol:14"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_array(t_string_storage)dyn_storage": {
+            "label": "string[]"
+          },
+          "t_mapping(t_uint256,t_struct(Unit)33_storage)": {
+            "label": "mapping(uint256 => struct Gacha.Unit)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_contract(ProvableI)761": {
+            "label": "contract ProvableI"
+          },
+          "t_contract(OracleAddrResolverI)767": {
+            "label": "contract OracleAddrResolverI"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_mapping(t_bytes32,t_bytes32)": {
+            "label": "mapping(bytes32 => bytes32)"
+          },
+          "t_mapping(t_bytes32,t_bool)": {
+            "label": "mapping(bytes32 => bool)"
+          }
+        }
+      }
+    },
+    "508e84408aa10e0c91e7a499c95cdb49e56068dd290a1e5b0e72b9b3c3605bd0": {
+      "address": "0xE36626b7496eD6bAaD8753172302b10A76A40e28",
+      "txHash": "0xdf1b308fe20a0fa26247a5fbc8de94c5d84e32b51aeb1f806f74d69dbd72851d",
+      "layout": {
+        "storage": [
+          {
+            "contract": "usingProvable",
+            "label": "provable",
+            "type": "t_contract(ProvableI)776",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\ProvableAPI_0.6.sol:259"
+          },
+          {
+            "contract": "usingProvable",
+            "label": "OAR",
+            "type": "t_contract(OracleAddrResolverI)782",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\ProvableAPI_0.6.sol:260"
+          },
+          {
+            "contract": "usingProvable",
+            "label": "provable_network_name",
+            "type": "t_string_storage",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\ProvableAPI_0.6.sol:273"
+          },
+          {
+            "contract": "usingProvable",
+            "label": "provable_randomDS_args",
+            "type": "t_mapping(t_bytes32,t_bytes32)",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\ProvableAPI_0.6.sol:280"
+          },
+          {
+            "contract": "usingProvable",
+            "label": "provable_randomDS_sessionKeysHashVerified",
+            "type": "t_mapping(t_bytes32,t_bool)",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\ProvableAPI_0.6.sol:281"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\Initializable.sol:23"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\Initializable.sol:28"
+          },
+          {
+            "contract": "GachaV2",
+            "label": "_pull",
+            "type": "t_uint256",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\GachaV2.sol:7"
+          },
+          {
+            "contract": "GachaV2",
+            "label": "Fivestar",
+            "type": "t_array(t_string_storage)dyn_storage",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\GachaV2.sol:11"
+          },
+          {
+            "contract": "GachaV2",
+            "label": "Fourstar",
+            "type": "t_array(t_string_storage)dyn_storage",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\GachaV2.sol:12"
+          },
+          {
+            "contract": "GachaV2",
+            "label": "Threestar",
+            "type": "t_array(t_string_storage)dyn_storage",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\GachaV2.sol:13"
+          },
+          {
+            "contract": "GachaV2",
+            "label": "PullResult",
+            "type": "t_mapping(t_uint256,t_struct(Unit)251_storage)",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\GachaV2.sol:14"
+          },
+          {
+            "contract": "GachaV2",
+            "label": "PullResultList",
+            "type": "t_array(t_struct(Unit)251_storage)dyn_storage",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-09\\contracts\\GachaV2.sol:27"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_array(t_string_storage)dyn_storage": {
+            "label": "string[]"
+          },
+          "t_mapping(t_uint256,t_struct(Unit)251_storage)": {
+            "label": "mapping(uint256 => struct GachaV2.Unit)"
+          },
+          "t_array(t_struct(Unit)251_storage)dyn_storage": {
+            "label": "struct GachaV2.Unit[]"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_contract(ProvableI)776": {
+            "label": "contract ProvableI"
+          },
+          "t_contract(OracleAddrResolverI)782": {
+            "label": "contract OracleAddrResolverI"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_mapping(t_bytes32,t_bytes32)": {
+            "label": "mapping(bytes32 => bytes32)"
+          },
+          "t_mapping(t_bytes32,t_bool)": {
+            "label": "mapping(bytes32 => bool)"
+          }
+        }
+      }
+    }
+  },
+  "admin": {
+    "address": "0xe2460CfFC9b93FfE21fcE26A8D40aaCD1e8c93fE",
+    "txHash": "0x1ee4f304e6fc4d07106d9e2022a7f5a95bafdb34c8626e88e2b675af2d291ddf"
+  }
+}
