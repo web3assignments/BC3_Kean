@@ -20,31 +20,31 @@ contract GachaTest {
     }
      function testOnepull() public {
         gacha.Start(1);
-        uint result =  gacha.getPullResultList().length;
+        uint result = gacha.getPullResultList().length;
         Assert.equal(result,1,"pulled 1 time");
     }
       
     function testTenPull() public {
         gacha.Start(10);
-        uint result =  gacha.getPullResultList().length;
+        uint result = gacha.getPullResultList().length;
         Assert.equal(result,10,"pulled 10 times");
     }
      
     function testFivestar() public {
          gacha.setCharachter(0);
-         uint result =  uint8(gacha.getPullLastResult());
-         Assert.equal(result, 5, "pulled 5 star");
+         uint result = uint8(gacha.getPullLastResult());
+         Assert.equal(result,5,"pulled 5 star");
     }
     
     function testFourstar() public {
          gacha.setCharachter(6);
-         uint result =  uint8(gacha.getPullLastResult());
-         Assert.equal(result, 4, "pulled 4 star");
+         uint result = uint8(gacha.getPullLastResult());
+         Assert.equal(result,4,"pulled 4 star");
     }
     function testThreestar() public {
          gacha.setCharachter(15);
-         uint result =  uint8(gacha.getPullLastResult());
-         Assert.equal(result, 3, "pulled 3 star");
+         uint result = uint8(gacha.getPullLastResult());
+         Assert.equal(result,3,"pulled 3 star");
     }
     
 }
