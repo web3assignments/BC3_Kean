@@ -41,10 +41,10 @@ contract GachaTest {
          uint result = uint8(gacha.getPullLastResult());
          Assert.equal(result,4,"pulled 4 star");
     }
+    
     function testThreestar() public {
          gacha.setCharachter(15);
          uint result = uint8(gacha.getPullLastResult());
          Assert.equal(result,3,"pulled 3 star");
     }
-    
 }
