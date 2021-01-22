@@ -18,7 +18,7 @@ contract GachaTest {
         // Here should instantiate tested contract
         gacha = new Game();
     }
-     function testOnepull() public {
+     function testOnePull() public {
         gacha.Start(1);
         uint result = gacha.getPullResultList().length;
         Assert.equal(result,1,"pulled 1 time");
