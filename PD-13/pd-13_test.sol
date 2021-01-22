@@ -33,7 +33,7 @@ contract GachaTest {
     function testFivestar() public {
          gacha.setCharachter(0);
          uint result =  uint8(gacha.getPullLastResult());
-        Assert.equal(result, 5, "pulled 5 star");
+         Assert.equal(result, 5, "pulled 5 star");
     }
     
     function testFourstar() public {
