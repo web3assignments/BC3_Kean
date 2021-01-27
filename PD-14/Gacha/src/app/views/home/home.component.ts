@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
   option: number;
   result: any;
   //contract = "0x2acFAAA3f79bD127eC79BAC14d7BDD049d5DE828";
-  contract = "0xdF2b1705a4a18F6B3fC938735d96F5D936C4ae74";
+  contract = "gachaimpact.eth";
   account: any;
   web3 :any;
   constructor() {}
