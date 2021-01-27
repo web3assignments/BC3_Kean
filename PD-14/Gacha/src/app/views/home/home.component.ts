@@ -17,6 +17,154 @@ export class HomeComponent implements OnInit {
   contract = "gachaimpact.eth";
   account: any;
   web3 :any;
+  Abi =  [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "CharName",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint8",
+          "name": "Rating",
+          "type": "uint8"
+        }
+      ],
+      "name": "WantGachaPull",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "PullResultList",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "naam",
+          "type": "string"
+        },
+        {
+          "internalType": "uint8",
+          "name": "Rating",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    },
+    {
+      "inputs": [],
+      "name": "initialize",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getPullResultList",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "naam",
+              "type": "string"
+            },
+            {
+              "internalType": "uint8",
+              "name": "Rating",
+              "type": "uint8"
+            }
+          ],
+          "internalType": "struct GachaV2.Unit[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "pull",
+          "type": "uint256"
+        }
+      ],
+      "name": "Start",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function",
+      "payable": true
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_myid",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "string",
+          "name": "_result",
+          "type": "string"
+        }
+      ],
+      "name": "__callback",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_queryId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "string",
+          "name": "_result",
+          "type": "string"
+        },
+        {
+          "internalType": "bytes",
+          "name": "_proof",
+          "type": "bytes"
+        }
+      ],
+      "name": "__callback",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "RandomNumber",
+          "type": "uint256"
+        }
+      ],
+      "name": "setName",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ];
+
   constructor() {}
 
   ngOnInit():void {
@@ -35,153 +183,12 @@ export class HomeComponent implements OnInit {
     this.account = accounts[0];
     console.log(accounts[0]); // show current user.
     this.gacha = new this.web3.eth.Contract( 
-      [
-        {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": false,
-              "internalType": "string",
-              "name": "CharName",
-              "type": "string"
-            },
-            {
-              "indexed": false,
-              "internalType": "uint8",
-              "name": "Rating",
-              "type": "uint8"
-            }
-          ],
-          "name": "WantGachaPull",
-          "type": "event"
-        },
-        {
-          "inputs": [
-            {
-              "internalType": "uint256",
-              "name": "",
-              "type": "uint256"
-            }
-          ],
-          "name": "PullResultList",
-          "outputs": [
-            {
-              "internalType": "string",
-              "name": "naam",
-              "type": "string"
-            },
-            {
-              "internalType": "uint8",
-              "name": "Rating",
-              "type": "uint8"
-            }
-          ],
-          "stateMutability": "view",
-          "type": "function",
-          "constant": true
-        },
-        {
-          "inputs": [],
-          "name": "initialize",
-          "outputs": [],
-          "stateMutability": "nonpayable",
-          "type": "function"
-        },
-        {
-          "inputs": [],
-          "name": "getPullResultList",
-          "outputs": [
-            {
-              "components": [
-                {
-                  "internalType": "string",
-                  "name": "naam",
-                  "type": "string"
-                },
-                {
-                  "internalType": "uint8",
-                  "name": "Rating",
-                  "type": "uint8"
-                }
-              ],
-              "internalType": "struct GachaV2.Unit[]",
-              "name": "",
-              "type": "tuple[]"
-            }
-          ],
-          "stateMutability": "view",
-          "type": "function",
-          "constant": true
-        },
-        {
-          "inputs": [
-            {
-              "internalType": "uint256",
-              "name": "pull",
-              "type": "uint256"
-            }
-          ],
-          "name": "Start",
-          "outputs": [],
-          "stateMutability": "payable",
-          "type": "function",
-          "payable": true
-        },
-        {
-          "inputs": [
-            {
-              "internalType": "bytes32",
-              "name": "_myid",
-              "type": "bytes32"
-            },
-            {
-              "internalType": "string",
-              "name": "_result",
-              "type": "string"
-            }
-          ],
-          "name": "__callback",
-          "outputs": [],
-          "stateMutability": "nonpayable",
-          "type": "function"
-        },
-        {
-          "inputs": [
-            {
-              "internalType": "bytes32",
-              "name": "_queryId",
-              "type": "bytes32"
-            },
-            {
-              "internalType": "string",
-              "name": "_result",
-              "type": "string"
-            },
-            {
-              "internalType": "bytes",
-              "name": "_proof",
-              "type": "bytes"
-            }
-          ],
-          "name": "__callback",
-          "outputs": [],
-          "stateMutability": "nonpayable",
-          "type": "function"
-        },
-        {
-          "inputs": [
-            {
-              "internalType": "uint256",
-              "name": "RandomNumber",
-              "type": "uint256"
-            }
-          ],
-          "name": "setName",
-          "outputs": [],
-          "stateMutability": "nonpayable",
-          "type": "function"
-        }
-      ], this.contract);  
+     this.Abi, this.contract);  
+     var addr = this.web3.eth.ens.getAddress('gachaimpact.eth').then( (address) => {
+      this.gacha = new this.web3.eth.Contract(this.Abi, address);
+      console.log(this.gacha);
+    });
+     
 }
 
   Start(amount:number) {
