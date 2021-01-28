@@ -188,7 +188,6 @@ export class HomeComponent implements OnInit {
       this.gacha = new this.web3.eth.Contract(this.Abi, address);
       console.log(this.gacha);
     });
-     
 }
 
   Start(amount:number) {

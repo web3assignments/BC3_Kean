@@ -1,0 +1,79 @@
+{
+  "manifestVersion": "3.1",
+  "impls": {
+    "a9e4da13ac4676e385dffa1f66330fe7caf91bacd1b0ad098f9d449cba829f1b": {
+      "address": "0x5E69300D16e293f0D90163EAD48C12aA1D85e461",
+      "txHash": "0x9ac1c2757e241bc8561d22e9ec5aa9e8fff949726e75768f0e2775c7c8d1949a",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-16\\contracts\\Initializable.sol:23"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-16\\contracts\\Initializable.sol:28"
+          },
+          {
+            "contract": "Gacha",
+            "label": "_pull",
+            "type": "t_uint256",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-16\\contracts\\Gacha.sol:7"
+          },
+          {
+            "contract": "Gacha",
+            "label": "Fivestar",
+            "type": "t_array(t_string_storage)dyn_storage",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-16\\contracts\\Gacha.sol:11"
+          },
+          {
+            "contract": "Gacha",
+            "label": "Fourstar",
+            "type": "t_array(t_string_storage)dyn_storage",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-16\\contracts\\Gacha.sol:12"
+          },
+          {
+            "contract": "Gacha",
+            "label": "Threestar",
+            "type": "t_array(t_string_storage)dyn_storage",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-16\\contracts\\Gacha.sol:13"
+          },
+          {
+            "contract": "Gacha",
+            "label": "PullResult",
+            "type": "t_array(t_struct(Unit)30_storage)dyn_storage",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-16\\contracts\\Gacha.sol:15"
+          },
+          {
+            "contract": "Gacha",
+            "label": "AllPullResult",
+            "type": "t_array(t_struct(Unit)30_storage)dyn_storage",
+            "src": "..\\..\\..\\..\\..\\..\\..\\C\\Users\\keanYl\\source\\repos\\BC3_Kean\\PD-16\\contracts\\Gacha.sol:16"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_array(t_string_storage)dyn_storage": {
+            "label": "string[]"
+          },
+          "t_array(t_struct(Unit)30_storage)dyn_storage": {
+            "label": "struct Gacha.Unit[]"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    }
+  },
+  "admin": {
+    "address": "0xDf508C302f14bB7701EC35828Ab2A4A8162B6E74",
+    "txHash": "0x442df4727fd293bfe66677815f12ae4577296d3458e30ea3f8301e98f2bc2fb8"
+  }
+}
